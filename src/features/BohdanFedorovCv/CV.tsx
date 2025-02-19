@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import Head from "next/head";
-import schema from "./schema.json";
-import Script from "next/script";
 import { Metadata } from "next";
+import Head from "next/head";
+import Script from "next/script";
+import { useRef, useState } from "react";
+import schema from "./schema.json";
 
 export const metadata: Metadata = {
   title: `${schema.name} ${schema.familyName}`,
@@ -13,27 +13,11 @@ export const metadata: Metadata = {
 
 const CV = () => {
   const [expandedJobs, setExpandedJobs] = useState<number[]>([]);
-  const [isPrinting, setIsPrinting] = useState(false);
   const componentRef = useRef<HTMLDivElement>(null);
 
   const toggleJobDetails = (index: number) => {
     setExpandedJobs((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
-    );
-  };
-
-  useEffect(() => {
-    if (isPrinting) {
-      document.body.classList.add("print-mode");
-    } else {
-      document.body.classList.remove("print-mode");
-    }
-  }, [isPrinting]);
-
-  const handleBeforePrint = async () => {
-    setIsPrinting(true);
-    setExpandedJobs(
-      Array.from({ length: schema.hasOccupation.length }, (_, i) => i),
     );
   };
 
@@ -70,6 +54,12 @@ const CV = () => {
                   <i className="fa fa-phone mr-2"></i>
                   {schema.contact_information.phone}
                 </a>
+                <a
+                  href={schema.contact_information.github}
+                  className="contact-button"
+                >
+                  {schema.contact_information.github}
+                </a>
               </div>
             </div>
           </div>
@@ -83,7 +73,11 @@ const CV = () => {
                 {Array.isArray(schema.professionalSummary)
                   ? schema.professionalSummary.map((item, index) => {
                       if (typeof item === "string") {
-                        return <p key={index} className="text-lg mb-6">{item}</p>;
+                        return (
+                          <p key={index} className="text-lg mb-6">
+                            {item}
+                          </p>
+                        );
                       }
                       if (typeof item === "object") {
                         if (item?.list) {
