@@ -1,19 +1,13 @@
 "use client";
+import { FC, useState } from "react";
+import { CV_JSON } from "./types";
 
-import { Metadata } from "next";
-import Head from "next/head";
-import Script from "next/script";
-import { useRef, useState } from "react";
-import schema from "./schema.json";
-
-export const metadata: Metadata = {
-  title: `${schema.name} ${schema.familyName}`,
-  description: `${schema.name} ${schema.familyName} - Professional portfolio and CV`,
+type CVProps = {
+  schema: CV_JSON;
 };
 
-const CV = () => {
+const CV: FC<CVProps> = ({ schema }) => {
   const [expandedJobs, setExpandedJobs] = useState<number[]>([]);
-  const componentRef = useRef<HTMLDivElement>(null);
 
   const toggleJobDetails = (index: number) => {
     setExpandedJobs((prev) =>
@@ -23,15 +17,8 @@ const CV = () => {
 
   return (
     <>
-      <Head>
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      </Head>
-
-      <div ref={componentRef} className="bg-gray-50 min-h-screen">
-        <section className="hero-section px-6 sm:px-10 lg:px-20">
+      <div className="bg-gray-50 min-h-screen">
+        <section className="hero-section px-6 sm:px-10 lg:px-20 page">
           <div className="container mx-auto max-w-5xl">
             <div data-aos="fade-up">
               <h1 className="text-5xl font-bold mb-4">{`${schema.name} ${schema.familyName}`}</h1>
@@ -60,6 +47,16 @@ const CV = () => {
                 >
                   {schema.contact_information.github}
                 </a>
+                <button
+                  className="contact-button print:opacity-0"
+                  onClick={() => {
+                    if (window !== undefined) {
+                      window.print();
+                    }
+                  }}
+                >
+                  Save as pdf
+                </button>
               </div>
             </div>
           </div>
@@ -200,7 +197,7 @@ const CV = () => {
               {schema.knowsAbout.map((category, index) => (
                 <div
                   key={index}
-                  className="skill-card"
+                  className="skill-card page"
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
                 >
@@ -229,7 +226,6 @@ const CV = () => {
             </div>
           </section>
 
-          {/* Освіта */}
           <section className="mb-16" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-6">Education</h2>
             <div className="space-y-6">
@@ -245,7 +241,7 @@ const CV = () => {
             </div>
           </section>
 
-          {/* Шукаю можливості */}
+          <div className="break-after-page"></div>
           <section className="mb-16" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-6">Looking for</h2>
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -260,6 +256,8 @@ const CV = () => {
           </section>
         </div>
       </div>
+
+      <div className="divFooter">{schema.contact_information.website}</div>
     </>
   );
 };

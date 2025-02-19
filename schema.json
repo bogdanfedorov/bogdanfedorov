@@ -9,7 +9,8 @@
   "contact_information": {
     "phone": "+48 796 785 808",
     "github": "https://github.com/bogdanfedorov",
-    "linkedin": "https://www.linkedin.com/in/bohdan-fedorov-137636263/?locale=en_US"
+    "linkedin": "https://www.linkedin.com/in/bohdan-fedorov-137636263/?locale=en_US",
+    "website": "https://bogdanfedorov.github.io/bogdanfedorov/"
   },
   "jobTitle": ["Backend Developer", "Full-stack Developer", "DevOps Engineer"],
   "hasOccupation": [
@@ -553,4 +554,3 @@
     }
   ]
 }
-

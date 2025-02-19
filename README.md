@@ -3,6 +3,7 @@
 ### 🚀 Senior Full-stack Developer | 💡 AI Integration Specialist | 🛠 DevOps Engineer
 
 With 5+ years of experience building high-load systems and integrating cutting-edge AI solutions. Passionate about creating scalable, efficient applications that solve real business challenges.
+[more...](https://bogdanfedorov.github.io/bogdanfedorov/)
 
 ## 🎯 Professional Summary
 
