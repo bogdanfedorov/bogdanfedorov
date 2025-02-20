@@ -11,6 +11,45 @@ export const metadata: Metadata = {
       url: schema.contact_information.github,
     },
   ],
+  keywords: [
+    "CV",
+    "Professional portfolio",
+    "Software engineer",
+    "Full stack developer",
+    "React developer",
+    "Node.js",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Express.js",
+    "Nest.js",
+    "GOLANG",
+    "Python",
+    "MongoDB",
+    // AI & Machine Learning
+    "OpenAI API", "LLM", "Stable Diffusion", "AI Integration", "Prompt Engineering",
+    
+    // Roles & Expertise
+    "Backend Developer", "Full-stack Developer", "DevOps Engineer", "Team Lead",
+    "Senior Developer", "Software Engineer",
+    
+    // Domain Expertise
+    "Microservices", "High-Load Systems", "API Development", "System Architecture",
+    "Database Optimization", "Real-time Systems",
+    
+    // Frameworks & Tools
+    "GraphQL", "Tailwind CSS", "Material-UI", "Git", "GitHub Actions",
+    "Kafka", "WebSocket", "REST API",
+    
+    // Soft Skills
+    "Team Leadership", "Project Management", "Agile", "Code Review",
+    
+    // Industries
+     "CRM Systems", "Cryptocurrency", "Sports Analytics", "AI-powered Applications",
+
+    // Languages
+    "English", "Ukrainian", "Polish", "Russian",
+  ],
 };
 
 export default function Home() {
