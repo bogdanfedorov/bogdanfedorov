@@ -1,18 +1,40 @@
 "use client";
 import { FC, useState } from "react";
 import { CV_JSON } from "./types";
+import { useExpanded } from "./useExpanded";
 
 type CVProps = {
   schema: CV_JSON;
 };
 
 const CV: FC<CVProps> = ({ schema }) => {
-  const [expandedJobs, setExpandedJobs] = useState<number[]>([]);
+  const {
+    toggleOne: toggleJobDetails,
+    toggleAll: toggleAllJobDetails,
+    has: expandedJobsHas,
+  } = useExpanded(schema.hasOccupation.length);
+  const [isPrintModal, setIsModalPrint] = useState<boolean>(false);
 
-  const toggleJobDetails = (index: number) => {
-    setExpandedJobs((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
-    );
+  const togglePrintModal = () => {
+    setIsModalPrint((prev) => !prev);
+  };
+
+  const callPrint = () => {
+    togglePrintModal();
+    setTimeout(() => {
+      if (window !== undefined) {
+        window.print();
+      }
+    }, 100);
+  };
+
+  const callPrintAll = () => {
+    toggleAllJobDetails(true);
+    callPrint();
+  };
+  const callPrintShort = () => {
+    toggleAllJobDetails(false);
+    callPrint();
   };
 
   return (
@@ -48,12 +70,8 @@ const CV: FC<CVProps> = ({ schema }) => {
                   {schema.contact_information.github}
                 </a>
                 <button
-                  className="contact-button print:opacity-0"
-                  onClick={() => {
-                    if (window !== undefined) {
-                      window.print();
-                    }
-                  }}
+                  className="contact-button-green print:opacity-0"
+                  onClick={togglePrintModal}
                 >
                   Save as pdf
                 </button>
@@ -107,7 +125,7 @@ const CV: FC<CVProps> = ({ schema }) => {
               {schema.hasOccupation.map((job, index) => (
                 <div
                   key={index}
-                  className="experience-item"
+                  className={`experience-item ${expandedJobsHas(index) ? "page" : ""}`}
                   data-aos="fade-up"
                   onClick={() => toggleJobDetails(index)}
                 >
@@ -118,7 +136,7 @@ const CV: FC<CVProps> = ({ schema }) => {
                         {job.startDate} - {job.endDate}
                       </span>
                       <span className="text-gray-600">
-                        {expandedJobs.includes(index) ? "▼" : "▶"}
+                        {expandedJobsHas(index) ? "▼" : "▶"}
                       </span>
                     </div>
                   </div>
@@ -129,7 +147,7 @@ const CV: FC<CVProps> = ({ schema }) => {
                   </p>
                   <p className="text-gray-600 mb-4">{job.location.name}</p>
 
-                  {expandedJobs.includes(index) && (
+                  {expandedJobsHas(index) && (
                     <div className="mt-4 space-y-6">
                       {job.skills && (
                         <div className="mb-6">
@@ -193,11 +211,11 @@ const CV: FC<CVProps> = ({ schema }) => {
 
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6">Technical Expertise</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-6">
               {schema.knowsAbout.map((category, index) => (
                 <div
                   key={index}
-                  className="skill-card page"
+                  className="skill-card"
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
                 >
@@ -214,7 +232,9 @@ const CV: FC<CVProps> = ({ schema }) => {
             </div>
           </section>
 
-          <section className="mb-16" data-aos="fade-up">
+          <div className="break-after-page"></div>
+
+          <section className="mb-5" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-6">Languages</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {schema.knowsLanguage.map((lang, index) => (
@@ -226,7 +246,7 @@ const CV: FC<CVProps> = ({ schema }) => {
             </div>
           </section>
 
-          <section className="mb-16" data-aos="fade-up">
+          <section className="mb-5" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-6">Education</h2>
             <div className="space-y-6">
               {schema.alumniOf.map((edu, index) => (
@@ -241,8 +261,7 @@ const CV: FC<CVProps> = ({ schema }) => {
             </div>
           </section>
 
-          <div className="break-after-page"></div>
-          <section className="mb-16" data-aos="fade-up">
+          <section className="mb-5" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-6">Looking for</h2>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <ul className="space-y-2">
@@ -257,7 +276,59 @@ const CV: FC<CVProps> = ({ schema }) => {
         </div>
       </div>
 
-      <div className="divFooter">{schema.contact_information.website}</div>
+      <footer className="hidden print:block print:fixed print:bottom-0">
+        {schema.contact_information.website}
+      </footer>
+
+      {isPrintModal && (
+        <div
+          className="relative z-10 print:hidden"
+          aria-labelledby="modal-title"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="fixed inset-0 bg-gray-500/75 transition-opacity"
+            aria-hidden="true"
+          ></div>
+
+          <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <div className="sm:flex sm:items-start">
+                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <h3
+                        className="text-base font-semibold text-gray-900"
+                        id="modal-title"
+                      >
+                        Do you want to read more about the information you
+                        asked?
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                  <button
+                    type="button"
+                    onClick={callPrintShort}
+                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 sm:ml-3 sm:w-auto"
+                  >
+                    No
+                  </button>
+                  <button
+                    type="button"
+                    onClick={callPrintAll}
+                    className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                  >
+                    Yes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

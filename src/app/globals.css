@@ -23,17 +23,6 @@
   .page-break {
     break-after: page;
   }
-
-  div.divFooter {
-    position: fixed;
-    bottom: 0;
-  }
-}
-
-@media screen {
-  div.divFooter {
-    display: none;
-  }
 }
 
 :root {
@@ -41,6 +30,7 @@
   --secondary: #1e40af;
   --background: #f8fafc;
   --text: #1e293b;
+  --green: #16a34a;
 }
 
 body {
@@ -93,6 +83,14 @@ body {
   transition: background 0.2s;
 }
 
+.contact-button-green {
+  background: var(--green);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
 .contact-button:hover {
   background: var(--secondary);
 }
@@ -105,4 +103,3 @@ body {
     page-break-before: always;
   }
 }
-
