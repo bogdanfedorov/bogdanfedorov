@@ -69,6 +69,12 @@ const CV: FC<CVProps> = ({ schema }) => {
                 >
                   {schema.contact_information.github}
                 </a>
+                <a
+                  href={schema.contact_information.website}
+                  className="contact-button"
+                >
+                  {schema.contact_information.website}
+                </a>
                 <button
                   className="contact-button-green print:opacity-0"
                   onClick={togglePrintModal}
@@ -215,7 +221,7 @@ const CV: FC<CVProps> = ({ schema }) => {
               {schema.knowsAbout.map((category, index) => (
                 <div
                   key={index}
-                  className="skill-card"
+                  className={`skill-card ${index % 2 === 0 ? "page" : ""}`}
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
                 >
@@ -231,8 +237,6 @@ const CV: FC<CVProps> = ({ schema }) => {
               ))}
             </div>
           </section>
-
-          <div className="break-after-page"></div>
 
           <section className="mb-5" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-6">Languages</h2>
@@ -260,25 +264,8 @@ const CV: FC<CVProps> = ({ schema }) => {
               ))}
             </div>
           </section>
-
-          <section className="mb-5" data-aos="fade-up">
-            <h2 className="text-3xl font-bold mb-6">Looking for</h2>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <ul className="space-y-2">
-                {schema.seeks.map((position, index) => (
-                  <li key={index} className="text-lg">
-                    • {position}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
         </div>
       </div>
-
-      <footer className="hidden print:block print:fixed print:bottom-0">
-        {schema.contact_information.website}
-      </footer>
 
       {isPrintModal && (
         <div
