@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import AOSProvider from "./AOSProvider";
 import "./globals.css";
 import Script from "next/script";
 import schema from "../../schema.json";
@@ -32,7 +31,7 @@ export default function RootLayout({
             __html: schema,
           }}
         />
-        <AOSProvider>{children}</AOSProvider>
+        {children}
       </body>
     </html>
   );
