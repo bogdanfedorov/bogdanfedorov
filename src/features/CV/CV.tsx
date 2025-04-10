@@ -2,6 +2,7 @@
 import { FC, useState } from "react";
 import { CV_JSON } from "./types";
 import { useExpanded } from "./useExpanded";
+import DownloadButton from "@/components/DownloadButton";
 
 type CVProps = {
   schema: CV_JSON;
@@ -67,20 +68,11 @@ const CV: FC<CVProps> = ({ schema }) => {
                   href={schema.contact_information.github}
                   className="contact-button"
                 >
-                  {schema.contact_information.github}
+                  Github
                 </a>
-                <a
-                  href={schema.contact_information.website}
-                  className="contact-button"
-                >
-                  {schema.contact_information.website}
-                </a>
-                <button
-                  className="contact-button-green print:opacity-0"
-                  onClick={togglePrintModal}
-                >
+                <DownloadButton fileName="Bohdan_Fedorov.pdf">
                   Save as pdf
-                </button>
+                </DownloadButton>
               </div>
             </div>
           </div>

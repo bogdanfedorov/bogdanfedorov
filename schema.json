@@ -148,7 +148,7 @@
     },
     {
       "@type": "Occupation",
-      "name": "CRM System Development",
+      "name": "Freelance",
       "startDate": "2024-02",
       "endDate": "2024-07",
       "location": {
@@ -204,7 +204,7 @@
     },
     {
       "@type": "Occupation",
-      "name": "X-it",
+      "name": "Freelance",
       "startDate": "2024-07",
       "endDate": "2024-09",
       "location": {
@@ -239,7 +239,7 @@
     },
     {
       "@type": "Occupation",
-      "name": "Alstats",
+      "name": "Freelance",
       "startDate": "2024-10",
       "endDate": "2025-02",
       "location": {
@@ -306,7 +306,7 @@
     {
       "@type": "Language",
       "name": "English",
-      "proficiencyLevel": "B1"
+      "proficiencyLevel": "B2"
     },
     {
       "@type": "Language",
@@ -505,7 +505,7 @@
     "DevOps Engineer focusing on CI/CD, Docker, and cloud services."
   ],
   "professionalSummary": [
-    "Senior Full-stack Developer with 5+ years of experience, specializing in high-load systems and AI integration. Proven track record in developing enterprise-level applications using Node.js (Express, Nest.js) and React.js.",
+    "Full-stack Developer with 5+ years of experience, specializing in high-load systems and AI integration. Proven track record in developing enterprise-level applications using Node.js (Express, Nest.js) and React.js.",
     {
       "title": "Key strengths:",
       "list": [
