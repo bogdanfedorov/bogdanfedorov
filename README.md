@@ -13,7 +13,7 @@ With 5+ years of experience building high-load systems and integrating cutting-e
 - 👥 Experienced team leader managing 3-5 developers
 
 ## Achivments 
-![3-million-legend]https://tryhackme.com/bogdanfedorov/badges/3-million-legend
+![3-million-legend](https://tryhackme.com/bogdanfedorov/badges/3-million-legend)
 
 ## 🛠 Tech Stack
 
