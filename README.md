@@ -12,9 +12,6 @@ With 5+ years of experience building high-load systems and integrating cutting-e
 - 📊 Database optimization specialist (MongoDB, PostgreSQL)
 - 👥 Experienced team leader managing 3-5 developers
 
-## Achivments 
-![3-million-legend](https://tryhackme.com/bogdanfedorov/badges/3-million-legend)
-
 ## 🛠 Tech Stack
 
 ### Backend Development
