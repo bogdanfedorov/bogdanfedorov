@@ -1,78 +1,81 @@
-# 👋 Hi, I'm Bohdan Fedorov
+# **BOHDAN FEDOROV**
 
-### 🚀 Senior Full-stack Developer | 💡 AI Integration Specialist | 🛠 DevOps Engineer
+Senior Full-Stack Developer  |  DevOps Engineer  |  AI Integration | PM   
+📍 Worldwide •  bogdanfedorov@gmail.com  •  [LinkedIn](https://www.linkedin.com/in/bohdan-fedorov-137636263)  •  [GitHub](https://github.com/bogdanfedorov)
 
-With 5+ years of experience building high-load systems and integrating cutting-edge AI solutions. Passionate about creating scalable, efficient applications that solve real business challenges.
-[more...](https://bogdanfedorov.github.io/bogdanfedorov/)
+## **PROFESSIONAL SUMMARY**
 
-## 🎯 Professional Summary
+Senior engineer with 6 years across the full stack — backend, frontend, DevOps, and AI integration. Delivered end-to-end products from concept to 2000+ users, optimized critical infrastructure (4× DB performance), and led teams from 1 to 4 engineers. Known for owning problems fully, not just writing code.
 
-- 🏗 Architecting high-load systems supporting 70+ concurrent users
-- 🤖 Deep expertise in AI integration (OpenAI, Stable Diffusion)
-- 📊 Database optimization specialist (MongoDB, PostgreSQL)
-- 👥 Experienced team leader managing 3-5 developers
+## **TECHNICAL SKILLS**
 
-## 🛠 Tech Stack
+| Backend | ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)  ![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)  ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=FastAPI&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white) · microservices architecture |
+| :---- | :---- |
+| **Frontend** | ![React.js](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white) ![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=redux&logoColor=white) |
+| **DevOps / Cloud** | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white) ![AWS](https://img.shields.io/badge/-AWS-232F3E?logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/-Azure-0078D4?logo=microsoft-azure&logoColor=white) ![CI/CD](https://img.shields.io/badge/-CI%2FCD-0A0A0A?logo=github-actions&logoColor=white) ![Nginx](https://img.shields.io/badge/-Nginx-009639?logo=nginx&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?logo=github-actions&logoColor=white) ![CI/CD pipelines](https://img.shields.io/badge/-CI%2FCD%20Pipelines-00AEEF?logo=gitlab&logoColor=white)|
+| **Databases** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white) ![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?logo=elastic&logoColor=white) ![TypeORM](https://img.shields.io/badge/-TypeORM-007ACC?logo=typeorm&logoColor=white) |
+| **AI / ML** | ![OpenAI API](https://img.shields.io/badge/-OpenAI_API-412991?logo=openai&logoColor=white) ![LLM Prompt Engineering](https://img.shields.io/badge/LLM-Prompt_Engineering-00AEEF?logo=ai&logoColor=white) ![Stable Diffusion](https://img.shields.io/badge/-Stable_Diffusion-FF6B6B?logo=stability-ai&logoColor=white) ![LLM deployment](https://img.shields.io/badge/LLM-Deployment-6F42C1?logo=docker&logoColor=white) ![RAG](https://img.shields.io/badge/-RAG-00B894?logo=readthedocs&logoColor=white) |
+| **Other** | ![Playwright](https://img.shields.io/badge/-Playwright-73C0FF?logo=playwright&logoColor=white) ![Jest](https://img.shields.io/badge/-Jest-C21325?logo=jest&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white) ![Agile](https://img.shields.io/badge/-Agile-5BC0DE?logo=trello&logoColor=white) ![Team Leadership](https://img.shields.io/badge/-Team_Leadership-1F8AC0?logo=slack&logoColor=white) ![Mentoring](https://img.shields.io/badge/-Mentoring-00A86B?logo=education&logoColor=white) ![Agile/Scrum](https://img.shields.io/badge/Agile-Scrum-F7DF1E?logo=scrum&logoColor=black) ![Cloud Infrastructure](https://img.shields.io/badge/-Cloud_Infrastructure-0B74DE?logo=amazon-aws&logoColor=white) ![REST API](https://img.shields.io/badge/-REST_API-4FC08D?logo=rest&logoColor=white) ![Microservices](https://img.shields.io/badge/-Microservices-FFB86B?logo=architecture&logoColor=white) |
 
-### Backend Development
+## **WORK EXPERIENCE**
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white)
+#### Full-Stack Node.js \+ React.js Developer |  CRM Platform for Edu Sector | *Poland · Remote  • Aug 2025 – Present* 
 
-### Frontend Development
+▪ Building and maintaining a product CRM system, collaborating on feature delivery and system architecture
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+▪  Working with Node.js, TypeScript, React.js stack in an Agile environment
 
-### Database & Cache
+#### Full-Stack Node.js \+ React.js Developer |  AI Scheduling & Voicemail Platform (USA Client) | *USA, Chicago · Remote   Apr 2025 – Aug 2025*
 
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+▪  Delivered full-cycle AI-powered voicemail & scheduling platform (backend, frontend, infrastructure)
 
-### DevOps & Cloud
+▪  Optimized critical PostgreSQL queries achieving 4× reduction in execution time
 
-![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+▪  Stack: TypeScript · React · Deno · Supabase · PostgreSQL · Vapi · Google Calendar API
 
-## 🏆 Key Projects
+#### Backend Developer Go \+ Node.js \+ microservice  |  Football Analytics | *Warsaw, Poland • Oct 2024 – Feb 2025* |
 
-### AI-Powered Book Editing Platform
+▪  Designed high-load real-time analytics platform; built data pipelines with minimal latency
 
-- Developed comprehensive online book editing platform with AI assistance
-- Implemented text analysis, enhancement features, and automated book cover generation
-- Integrated text-to-speech functionality for audiobook creation
+▪  Stack: Node.js · MongoDB · PostgreSQL · Redis · Elasticsearch · Nginx
 
-### Enterprise CRM System
+#### Team Lead & Full-Stack Go \+ React.js Dev  |  CRM Platform for Communications Sector (call center) | *Kyiv, Ukraine • Feb 2024 – Jul 2024*
 
-- Built scalable microservices architecture supporting 70+ active users
-- Implemented complex role-based access control system
-- Integrated multiple lead sources with AI-enhanced chat system
+▪  Led end-to-end CRM development from scratch; scaled team from 1 to 4 engineers
 
-### Football Analytics System
+▪  Implemented Agile workflows, mentoring, and stakeholder communication
 
-- Developed high-load statistics collection and analysis platform
-- Optimized database performance and implemented efficient caching strategies
-- Created real-time data processing pipelines
+#### Full-Stack Node.js \+ React.js Developer  |  AI-Powered Publishing Platform (Israel Client) | *Tel Aviv, Israel · Remote Oct 2023 – Feb 2024*
 
-## 📫 Let's Connect
+▪  Built AI-powered book editing platform with text analysis, cover generation, TTS — reduced publication time by 50%
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bohdan-fedorov-137636263/?locale=en_US)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bogdanfedorov)
+#### Junior+ / Mid Developer | Full-Stack  |  Lampa Software | *Vinnytsia, Ukraine  •  Feb 2022 – Jul 2023*
 
-## 🌐 Languages
+▪  Delivered 3 production projects: cashback platform (Switzerland), time-tracking system, AI & crypto outstaff platform
 
-- English (B1)
-- Ukrainian (Native)
-- Polish (C1)
-- Russian (Native)
+▪  Managed direct English-speaking client communication; transitioned to independent outstaff work
+
+#### Junior Backend Node.js Developer |  Yalantis | *Kyiv, Ukraine  •  Sep 2020 – Feb 2022*
+
+▪  Designed RESTful APIs with Node.js (Express, NestJS), PostgreSQL, and Swagger documentation
+
+#### Junior Backend Node.js Developer | Freelance part time  | *Kyiv, Ukraine  •  Sep 2019 – Sep 2020*
+
+## EDUCATION 
+▪  College of Information Systems & Technologies *Computer Science  •  Kyiv, Ukraine  •  2018–2022*
+
+▪   University College of Enterprise and Administration *Information Technology  •  Lublin, Poland  •  2016–2018*  
+
+## LANGUAGES 
+▪ Ukrainian  —  Native
+
+▪ Russian  —  Native 
+
+▪ Polish  —  B2 
+
+▪ English  —  B1
 
 ---
 
-💼 Open to exciting opportunities in Backend Development, Full-stack Development, and DevOps Engineering roles.
+💼 Open to exciting opportunities in Backend Development, Full-stack Development, Product Management (PM), Strategic Consulting
+Technical Entrepreneurship, R&D Areas.
