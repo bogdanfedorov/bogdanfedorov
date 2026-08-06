@@ -17,54 +17,10 @@ Senior engineer with 6 years across the full stack — backend, frontend, DevOps
 | **AI / ML** | ![OpenAI API](https://img.shields.io/badge/-OpenAI_API-412991?logo=openai&logoColor=white) ![LLM Prompt Engineering](https://img.shields.io/badge/LLM-Prompt_Engineering-00AEEF?logo=ai&logoColor=white) ![Stable Diffusion](https://img.shields.io/badge/-Stable_Diffusion-FF6B6B?logo=stability-ai&logoColor=white) ![LLM deployment](https://img.shields.io/badge/LLM-Deployment-6F42C1?logo=docker&logoColor=white) ![RAG](https://img.shields.io/badge/-RAG-00B894?logo=readthedocs&logoColor=white) |
 | **Other** | ![Playwright](https://img.shields.io/badge/-Playwright-73C0FF?logo=playwright&logoColor=white) ![Jest](https://img.shields.io/badge/-Jest-C21325?logo=jest&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white) ![Agile](https://img.shields.io/badge/-Agile-5BC0DE?logo=trello&logoColor=white) ![Team Leadership](https://img.shields.io/badge/-Team_Leadership-1F8AC0?logo=slack&logoColor=white) ![Mentoring](https://img.shields.io/badge/-Mentoring-00A86B?logo=education&logoColor=white) ![Agile/Scrum](https://img.shields.io/badge/Agile-Scrum-F7DF1E?logo=scrum&logoColor=black) ![Cloud Infrastructure](https://img.shields.io/badge/-Cloud_Infrastructure-0B74DE?logo=amazon-aws&logoColor=white) ![REST API](https://img.shields.io/badge/-REST_API-4FC08D?logo=rest&logoColor=white) ![Microservices](https://img.shields.io/badge/-Microservices-FFB86B?logo=architecture&logoColor=white) |
 
-## **WORK EXPERIENCE**
-
-#### Full-Stack Node.js \+ React.js Developer |  CRM Platform for Edu Sector | *Poland · Remote  • Aug 2025 – Present* 
-
-▪ Building and maintaining a product CRM system, collaborating on feature delivery and system architecture
-
-▪  Working with Node.js, TypeScript, React.js stack in an Agile environment
-
-#### Full-Stack Node.js \+ React.js Developer |  AI Scheduling & Voicemail Platform (USA Client) | *USA, Chicago · Remote   Apr 2025 – Aug 2025*
-
-▪  Delivered full-cycle AI-powered voicemail & scheduling platform (backend, frontend, infrastructure)
-
-▪  Optimized critical PostgreSQL queries achieving 4× reduction in execution time
-
-▪  Stack: TypeScript · React · Deno · Supabase · PostgreSQL · Vapi · Google Calendar API
-
-#### Backend Developer Go \+ Node.js \+ microservice  |  Football Analytics | *Warsaw, Poland • Oct 2024 – Feb 2025* |
-
-▪  Designed high-load real-time analytics platform; built data pipelines with minimal latency
-
-▪  Stack: Node.js · MongoDB · PostgreSQL · Redis · Elasticsearch · Nginx
-
-#### Team Lead & Full-Stack Go \+ React.js Dev  |  CRM Platform for Communications Sector (call center) | *Kyiv, Ukraine • Feb 2024 – Jul 2024*
-
-▪  Led end-to-end CRM development from scratch; scaled team from 1 to 4 engineers
-
-▪  Implemented Agile workflows, mentoring, and stakeholder communication
-
-#### Full-Stack Node.js \+ React.js Developer  |  AI-Powered Publishing Platform (Israel Client) | *Tel Aviv, Israel · Remote Oct 2023 – Feb 2024*
-
-▪  Built AI-powered book editing platform with text analysis, cover generation, TTS — reduced publication time by 50%
-
-#### Junior+ / Mid Developer | Full-Stack  |  Lampa Software | *Vinnytsia, Ukraine  •  Feb 2022 – Jul 2023*
-
-▪  Delivered 3 production projects: cashback platform (Switzerland), time-tracking system, AI & crypto outstaff platform
-
-▪  Managed direct English-speaking client communication; transitioned to independent outstaff work
-
-#### Junior Backend Node.js Developer |  Yalantis | *Kyiv, Ukraine  •  Sep 2020 – Feb 2022*
-
-▪  Designed RESTful APIs with Node.js (Express, NestJS), PostgreSQL, and Swagger documentation
-
-#### Junior Backend Node.js Developer | Freelance part time  | *Kyiv, Ukraine  •  Sep 2019 – Sep 2020*
-
 ## EDUCATION 
-▪  College of Information Systems & Technologies *Computer Science  •  Kyiv, Ukraine  •  2018–2022*
+▪  College of Information Systems & Technologies Computer Science  •  Kyiv, Ukraine  •  2018–2022
 
-▪   University College of Enterprise and Administration *Information Technology  •  Lublin, Poland  •  2016–2018*  
+▪   University College of Enterprise and Administration Information Technology  •  Lublin, Poland  •  2016–2018 (not finished)  
 
 ## LANGUAGES 
 ▪ Ukrainian  —  Native
@@ -73,9 +29,4 @@ Senior engineer with 6 years across the full stack — backend, frontend, DevOps
 
 ▪ Polish  —  B2 
 
-▪ English  —  B1
-
----
-
-💼 Open to exciting opportunities in Backend Development, Full-stack Development, Product Management (PM), Strategic Consulting
-Technical Entrepreneurship, R&D Areas.
+▪ English  —  B2
